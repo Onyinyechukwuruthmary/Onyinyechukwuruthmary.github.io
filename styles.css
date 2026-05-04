@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center; /* GLOBAL CENTER */
 }
 
 body {
@@ -17,7 +18,6 @@ header {
   width: 100%;
   background: #0a2540;
   color: white;
-  text-align: center;
   padding: 15px;
   z-index: 1000;
 }
@@ -29,7 +29,6 @@ footer {
   width: 100%;
   background: #0a2540;
   color: white;
-  text-align: center;
   padding: 10px;
 }
 
@@ -44,23 +43,25 @@ footer {
 .container {
   width: 80%;
   max-width: 900px;
-  text-align: center;
 }
 
+/* SECTIONS */
 section {
   margin: 50px 0;
 }
 
+/* HEADINGS */
 h1, h2, h3 {
   margin-bottom: 15px;
   color: #0a2540;
 }
 
+/* PARAGRAPHS */
 p {
-  text-align: justify;
   margin: 10px auto;
   width: 80%;
   line-height: 1.6;
+  text-align: center; /* FIXED */
 }
 
 /* HERO */
@@ -95,6 +96,12 @@ p {
 }
 
 /* IMAGE SECTION */
+.images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .images img {
   width: 45%;
   margin: 10px;
@@ -116,13 +123,21 @@ ul li {
   color: #0073b1;
   text-decoration: none;
 }
+
 /* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 form input, form textarea {
-  width: 100%;
+  width: 80%;
   margin: 6px 0;
   padding: 10px;
   border-radius: 6px;
   border: 1px solid #ccc;
+  text-align: center;
 }
 
 form textarea {
@@ -131,7 +146,7 @@ form textarea {
 
 form button {
   padding: 12px;
-  width: 100%;
+  width: 80%;
   background: #0A66C2;
   color: white;
   border: none;
@@ -144,6 +159,7 @@ form button:hover {
   background: #004182;
 }
 
+/* CHATBOT */
 .chatbot-box {
   max-width: 400px;
   margin: 20px auto;
@@ -166,18 +182,15 @@ form button:hover {
   margin: 8px 0;
 }
 
-.user {
-  text-align: right;
-  color: #333;
+/* CENTER BOTH USER & BOT TEXT */
+.user, .bot {
+  text-align: center;
 }
 
-.bot {
-  text-align: left;
-  color: #2c7be5;
-}
-
+/* INPUT AREA */
 .input-area {
   display: flex;
+  justify-content: center;
 }
 
 .input-area input {
@@ -185,6 +198,7 @@ form button:hover {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  text-align: center;
 }
 
 .input-area button {
